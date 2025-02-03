@@ -6,10 +6,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    background: #f7f7f7;
     color: #333;
-    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
 header {
@@ -42,24 +44,29 @@ nav {
 }
 
 #hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
 #hero h1 {
+    font-family: 'Merriweather', serif;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    color: #222;
 }
 
 #hero p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    max-width: 600px;
     margin-bottom: 2rem;
+    color: #c5b6b6;
 }
 
 #hero .cta {
@@ -72,6 +79,31 @@ nav {
     text-decoration: none;
     font-size: 1rem;
 }
+
+ /* Call-to-action button */
+ .hero a.button {
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .hero a.button:hover {
+    background-color: #004999;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.125rem;
+    }
+  }
 
 section {
     padding: 4rem 2rem;
