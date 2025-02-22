@@ -105,24 +105,24 @@ filterButtons.forEach(button => {
     });
 });
 
-// Contact Form
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    showNotification('Message sent successfully!');
-    contactForm.reset();
-});
+// // Contact Form
+// const contactForm = document.getElementById('contact-form');
+// contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     showNotification('Message sent successfully!');
+//     contactForm.reset();
+// });
 
-// Notification System
-function showNotification(message) {
-    const notification = document.getElementById('notification');
-    notification.textContent = message;
-    notification.classList.add('show');
+// // Notification System
+// function showNotification(message) {
+//     const notification = document.getElementById('notification');
+//     notification.textContent = message;
+//     notification.classList.add('show');
     
-    setTimeout(() => {
-        notification.classList.remove('show');
-    }, 3000);
-}
+//     setTimeout(() => {
+//         notification.classList.remove('show');
+//     }, 3000);
+// }
 
 // Back to Top Button
 const backToTop = document.getElementById('back-to-top');
@@ -160,18 +160,18 @@ navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
 
-// Theme Toggle
-const themeToggle = document.getElementById('theme-toggle');
-let isDarkMode = true;
+// // Theme Toggle
+// const themeToggle = document.getElementById('theme-toggle');
+// let isDarkMode = true;
 
-themeToggle.addEventListener('click', () => {
-    isDarkMode = !isDarkMode;
-    document.body.classList.toggle('light-mode');
-    themeToggle.innerHTML = isDarkMode ? 
-        '<i class="fas fa-sun"></i>' : 
-        '<i class="fas fa-moon"></i>';
-    showNotification(`Switched to ${isDarkMode ? 'dark' : 'light'} mode`);
-});
+// themeToggle.addEventListener('click', () => {
+//     isDarkMode = !isDarkMode;
+//     document.body.classList.toggle('light-mode');
+//     themeToggle.innerHTML = isDarkMode ? 
+//         '<i class="fas fa-sun"></i>' : 
+//         '<i class="fas fa-moon"></i>';
+//     showNotification(`Switched to ${isDarkMode ? 'dark' : 'light'} mode`);
+// });
 
 // Tilt Effect for Profile Card
 const profileCard = document.querySelector('.profile-card');

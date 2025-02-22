@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+.paragraph-spacing{
+    padding-bottom: 10px;
+}
+
 
 /* Custom Cursor */
 .custom-cursor {
@@ -330,7 +334,6 @@ body {
 
 .contact-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -346,15 +349,16 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-left: 500px;
 }
 
-.contact-form {
+/* .contact-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
+} */
 
-.form-group {
+/* .form-group {
     position: relative;
 }
 
@@ -387,7 +391,7 @@ body {
 .form-group input:focus ~ .focus-border,
 .form-group textarea:focus ~ .focus-border {
     width: 100%;
-}
+} */
 
 /* Back to Top Button */
 .back-to-top {
