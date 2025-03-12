@@ -192,3 +192,14 @@ profileCard.addEventListener('mousemove', (e) => {
 profileCard.addEventListener('mouseleave', () => {
     profileCard.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
 });
+
+// video gallery 
+$(document).ready(function () {
+    $(".video-gallery").magnificPopup({
+      delegate: "a",
+      type: "iframe",
+      gallery: {
+        enabled: true
+      }
+    });
+  });
